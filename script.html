@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Module4-Assignment</title>
+  </head>
+<body bgcolor="orange">
+	<h1 align="center"> ASSIGNMENT SOLUTION IS HERE</h1>
+  <script>
+  (function () {
+
+var names = ["Yaakov", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula", "Laura", "Jim"];
+
+for (var i = 0; i < names.length; i++) {
+ 	var firstLetter = names[i].charAt(0).toLowerCase();
+var byespeaker = {};
+byespeaker.speakWord = "Good Bye";
+byespeaker.speak = function(name) {
+  console.log(byespeaker.speakWord + " " + name);
+}
+
+var hellospeaker = {};
+hellospeaker.speakWord = "Hello";
+hellospeaker.speak = function(name) {
+  console.log(hellospeaker.speakWord + " " + name);
+}
+if (firstLetter === 'j') {
+    byespeaker.speak(names[i]);
+  } else {
+    hellospeaker.speak(names[i]);
+  }
+}
+
+})();
+</script>
+<p align="center"> Go to chrome developer tools > console tab for the output of the assignment</p>
+</body>
+</html>
